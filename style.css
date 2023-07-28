@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start of main style css  */
+main{
+   
+    background-color: #2C3E50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .left-side{
+    width: 40;
+}
+main .left-side h1{
+    color: white;
+    font-size: 50px;
+}
+main .left-side p{
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main .right-side{
+    width: 40;
+    height: 400px;
+    animation: up-down 1s linear infinite alternate-reverse;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+
+    }
+}
+main .right-side img{
+    height: 100%;
+    width: 100%;
+}
+.left-side .btn{
+    margin-top: 20px;
+    background-color: #2E86C1;
+    border: none;
+    padding: 12px 15px;
+    color: white;
+    border-radius: 20px;
+}
+.left-side a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.left-side a i{
+    font-size: 35px;
+}
+
+/* end of main style css  */
+
+/* start of client style css section  */
+.client{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F2F3F4;
+    padding: 30px;      
+}
+
+.client .box{
+    height: 50px;
+    width: 100px;
+   
+}
+.client .box img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100); 
+    transition: all 0.7s;
+      
+}
+.client .box img:hover{
+    filter: none;
+    transform: scale(1.2);
+}
+
+/* end of client style css section  */
+
